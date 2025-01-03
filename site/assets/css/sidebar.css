@@ -23,6 +23,18 @@
     background-color: red;
     border-radius: 4px;
   }
+  .mastodon-sidebar .openbtn {
+    position: absolute;
+    top: 1;
+    right: 44px;
+    font-size: 24px;
+    margin-left: 50px;
+    padding: 0px 6px 7px 5px;
+  }
+  .mastodon-sidebar .openbtn:hover {
+    background-color: green;
+    border-radius: 4px;
+  }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .mastodon-sidebar {padding-top: 15px;}
