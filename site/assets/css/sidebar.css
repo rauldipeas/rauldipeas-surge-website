@@ -7,16 +7,21 @@
     left: 0;
     background-color: transparent;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.1s;
     padding-top: 50px;
   }
     
   .mastodon-sidebar .closebtn {
     position: absolute;
     top: 1;
-    right: 25px;
-    font-size: 36px;
+    right: 15px;
+    font-size: 30px;
     margin-left: 50px;
+    padding: 0px 6px 7px 5px;
+  }
+  .mastodon-sidebar .closebtn:hover {
+    background-color: red;
+    border-radius: 4px;
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -25,4 +30,5 @@
   }
   iframe {
     border-radius: 0px 20px 20px 0px;
+    border: 1.2px solid black;
   }
