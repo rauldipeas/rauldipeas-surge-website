@@ -1,0 +1,24 @@
+.topnav {
+  	position: fixed;
+	top: 2%;
+	right: 1%;
+	z-index: 100;
+}
+
+.topnav a {
+	padding: 0px 8px;
+	text-transform: none;
+}
+
+.topnav a:hover {
+	background-color: #04AA6D;
+	color: white;
+}
+.topnav-icon {
+	width: 16px;
+	margin-bottom: -2px;
+	transition: transform .1s;
+}
+.topnav-icon:hover {
+	transform: scale(1.4) rotate(6deg);
+}

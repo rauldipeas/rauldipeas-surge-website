@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/links-svg.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/topnav.css" />
     <noscript>
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
@@ -17,6 +21,10 @@
   </head>
   <body class="is-preload" style="background: #000">
     <div id="wrapper">
+      <div id="MastodonSidebar" class="mastodon-sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="350" height="660" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2Fusers%2Fraul_dipeas&theme=auto&size=100&header=true&replies=false&boosts=false"></iframe>
+      </div>
       <div style="z-index: -99;">
         <img src="assets/images/backgrounds/street-2.gif" class="animated-background">
       </div>
@@ -42,7 +50,7 @@
             <ul>
               <li><a href="https://respin-rdx.sourceforge.io" target="_blank"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/tux.svg" class="links-svg">Respin RDX</a></li>
               <li><a href="https://rauldipeas.substack.com" target="_blank"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/fbreader.svg" class="links-svg">Substack</a></li>
-              <li><a href="https://phanpy.social/#/mastodon.social/a/1202480?media=1" target="_blank"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/mstdn.svg" class="links-svg blob">Mastodon</a></li>
+              <li onclick="openNav()"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/mstdn.svg" class="links-svg blob">Mastodon</li>
               <li><a href="https://account.wire.com/user-profile/?id=6efdfd85-a846-415b-8ce9-a903b469e869" target="_blank"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/wire.svg" class="links-svg">Wire</a></li>
               <!--<li><a href="https://keybase.io/rauldipeas_wkb" target="_blank"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/keybase.svg" class="links-svg">Keybase</a></li>-->
               <!--<li><a href="https://instagram.com/raul_dipeas" target="_blank"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/instagram.svg" class="links-svg">Instagram</a></li>-->
@@ -55,5 +63,6 @@
   <script src="assets/js/carousel.js"></script>
   <script src="assets/js/crisp.js"></script>
   <script src="assets/js/load.js"></script>
+  <script src="assets/js/sidebar.js"></script>
 </body>
 </html>

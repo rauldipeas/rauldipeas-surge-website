@@ -1,0 +1,41 @@
+.blob {
+	border-radius: 35%;
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+	transform: scale(1);
+	animation: pulse 0.7s infinite;
+}
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+.links-svg {
+	filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+	width: 64px;
+	transition: transform .2s;
+	filter: brightness(90%);
+}
+.links-svg:hover {
+	transform: scale(1.5) rotate(8deg);
+	filter: brightness(100%);
+}
+@media all and (max-width: 950px) {
+	.links-svg {
+		width: 56px;
+		transition: transform .2s ease;
+		filter: brightness(100%);
+	}
+	.links-svg:hover {
+		transform: scale(1.2) rotate(8deg);
+		filter: brightness(100%);
+	};
+}

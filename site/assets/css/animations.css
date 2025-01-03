@@ -1,0 +1,15 @@
+.animated-avatar {
+	margin: auto;
+}
+@media all and (max-width: 950px) {
+	.animated-avatar {width: 176px;};
+}
+
+.animated-background {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

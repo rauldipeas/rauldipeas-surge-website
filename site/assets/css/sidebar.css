@@ -1,0 +1,28 @@
+.mastodon-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+  }
+    
+  .mastodon-sidebar .closebtn {
+    position: absolute;
+    top: 1;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .mastodon-sidebar {padding-top: 15px;}
+    .mastodon-sidebar a {font-size: 18px;}
+  }
+  iframe {
+    border-radius: 0px 20px 20px 0px;
+  }
