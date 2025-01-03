@@ -62,9 +62,6 @@ google_analytics:
 counter:
   data-id: 8d4724e6-4333-41ef-bed4-3caf12ce80e8
 
-crisp:
-  id: 896e35ed-eba0-4be0-a0f8-da0b0b95a8d5
-
 # Prefer color scheme setting.
 #
 # Note: Keep empty will follow the system prefer color by default,
