@@ -1,0 +1,19 @@
+name: Cópia de segurança da conta do Mastodon
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 10,22 * * *'
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Backup Mastodon Account
+        uses: potatoqualitee/fossilize@v1
+        id: backup
+        with:
+          server: mastodon.social
+        env:
+          ACCESS_TOKEN: ${{ secrets.MASTODON_TOKEN }}
